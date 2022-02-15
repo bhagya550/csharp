@@ -1,4 +1,4 @@
-﻿//if else if//
+﻿//switch//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,38 +13,33 @@ namespace ConsoleApp1
         public static void Main()
         {
             //if else 
-            //wap to accept 3 subject marks  and print total , per and grade.
-            int n1, n2, n3, total;
-            float per;
-            String grade;
-            Console.WriteLine("enter 3subject marks.");
+            //wap to accept 2 no. and operator
+            int n1, n2, res = 0;
+            char op;
+            Console.WriteLine("Enter 2 no");
             n1 = Convert.ToInt32(Console.ReadLine());
             n2 = Convert.ToInt32(Console.ReadLine());
-            n3 = Convert.ToInt32(Console.ReadLine());
-            total = n1 + n2 + n3;
-            per = (float)(total / 300.0f) * 100.0f;
-            Console.WriteLine("total = " + total);
-            Console.WriteLine("per = " + per);
-            if (per >= 75)
+            Console.WriteLine("Enter operator");
+            op = Convert.ToChar(Console.ReadLine());
+            switch (op)
             {
-                grade = "distinction";
-            }
-            else if (per >= 60 && per < 75)
-            {
-                grade = "first";
-            }
-            else
-            {
-                grade = "fail";
+                case '+':
+                    res = n1 + n2;
+                    break;
+                case '-':
+                    res = n1 - n2;
+                    break;
+                case '*':
+                    res = n1 * n2;
+                    break;
+                default:
+                    Console.WriteLine("invalid");
+                    break;
+
             }
 
-
-            Console.WriteLine("grede " + grade);
+            Console.WriteLine("res " + res);
             Console.ReadLine();
         }
     }
 }
-
-
-
-
