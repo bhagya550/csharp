@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
- namespace length -breadth
-    {
-    class program
+class program
 {
     static void Main(string[]args)
     {
-        //wap to accept len,breadth,and height and print volume//
-
+        int number;
+        Console.WriteLine("enter a number:");
+        number=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("you entered:{0}", number);
+        Console.ReadLine();
 
     }
 }
