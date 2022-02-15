@@ -1,4 +1,5 @@
-﻿//8 - char datatype//
+﻿//reference type//
+//string//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,13 @@ namespace ConsoleApp1
 
         public static void Main()
         {
-            char b = 'M';
+            String b = "Maninder";
             Console.WriteLine(" value " + b);
             Console.WriteLine("enter value ");
-            b = Convert.ToChar(Console.ReadLine());
+            b = Console.ReadLine();
             Console.WriteLine("value = " + b);
             Console.ReadLine();
         }
     }
 }
-
 
