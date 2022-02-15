@@ -1,5 +1,4 @@
 ﻿using System;
-    
 namespace ConsoleApp2
 {
     class Program
@@ -12,7 +11,7 @@ namespace ConsoleApp2
             {
                 for (j = 1; j < i; j++)
                 {
-                    Console.Write(j + "\t");
+                    Console.Write("*" + "\t");
                 }
                 Console.WriteLine();
 
