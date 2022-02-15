@@ -1,20 +1,32 @@
-﻿using System;
+﻿//create a structure student having members rno,name,course
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace printname
-{
-    class program
+namespace program11
     {
-        static void Main(string[]args)
-        {
-            //wap to accept your name and print
-            string name;
-            Console.WriteLine("enter your name");
-            name = Console.ReadLine();
-            Console.WriteLine("your name is" + name);
-            Console.WriteLine();
-        }
+    class classs1
+{
+    struct student
+    {
+        public int rno;
+        public string name;
+        public string course;
+
+    }
+    public static void Main()
+    {
+        student s1;
+        s1.rno = 20;
+        s1.name = "mahir";
+        s1.course = "dotnet";
+
+        Console.WriteLine("rno" + s1.rno);
+        Console.WriteLine("name" + s1.name);
+        Console.WriteLine("course" + s1.course);
+    }
+
+
     }
 }
