@@ -1,4 +1,4 @@
-﻿ //boolean datatype//
+﻿//8 - char datatype//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,17 +12,14 @@ namespace ConsoleApp1
 
         public static void Main()
         {
-            Boolean b = true;
+            char b = 'M';
             Console.WriteLine(" value " + b);
             Console.WriteLine("enter value ");
-            b = Convert.ToBoolean(Console.ReadLine());
+            b = Convert.ToChar(Console.ReadLine());
             Console.WriteLine("value = " + b);
             Console.ReadLine();
         }
     }
 }
-
-
-
 
 
