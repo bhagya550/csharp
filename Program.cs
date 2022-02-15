@@ -1,4 +1,4 @@
-﻿//if else//
+﻿//if else if//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,21 +13,38 @@ namespace ConsoleApp1
         public static void Main()
         {
             //if else 
-            //wap to accept 2 no and print greater no.
-            int n1, n2;
-            Console.WriteLine("enter 2 no.");
+            //wap to accept 3 subject marks  and print total , per and grade.
+            int n1, n2, n3, total;
+            float per;
+            String grade;
+            Console.WriteLine("enter 3subject marks.");
             n1 = Convert.ToInt32(Console.ReadLine());
             n2 = Convert.ToInt32(Console.ReadLine());
-            if (n1 > n2)
-                Console.WriteLine("n1 is greter");
+            n3 = Convert.ToInt32(Console.ReadLine());
+            total = n1 + n2 + n3;
+            per = (float)(total / 300.0f) * 100.0f;
+            Console.WriteLine("total = " + total);
+            Console.WriteLine("per = " + per);
+            if (per >= 75)
+            {
+                grade = "distinction";
+            }
+            else if (per >= 60 && per < 75)
+            {
+                grade = "first";
+            }
             else
-                Console.WriteLine("n2 is greater");
+            {
+                grade = "fail";
+            }
 
 
-
-
+            Console.WriteLine("grede " + grade);
             Console.ReadLine();
         }
     }
 }
+
+
+
 
