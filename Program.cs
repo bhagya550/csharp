@@ -1,4 +1,4 @@
-﻿// goto to check whether no . is even or odd//
+﻿//8 goto to check whether no . is even or odd//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +11,14 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int number = 4;
+            int number = 5;
             if (number % 2 == 0) goto Even;
             Console.WriteLine("no is odd");
             goto End;
         Even:
             Console.WriteLine("no is even");
         End:;
+
             Console.ReadLine();
 
         }
