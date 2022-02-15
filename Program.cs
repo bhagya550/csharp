@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace ConsoleApp2
 {
     class Program
@@ -11,7 +15,7 @@ namespace ConsoleApp2
             {
                 for (j = 1; j < i; j++)
                 {
-                    Console.Write("*" + "\t");
+                    Console.Write("+" + "\t");
                 }
                 Console.WriteLine();
 
