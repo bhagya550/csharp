@@ -13,7 +13,7 @@ namespace ConsoleApp2
         {
             // wap to print no from 1 to 10 using while loop
             int i = 1;
-            while (i <= 30)
+            while (i <= 20)
             {
                 Console.WriteLine("i = " + i);
                 i++;
