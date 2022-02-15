@@ -1,19 +1,20 @@
-﻿using System;
-namespace 11-02-2020
-    {
-    class class1
+﻿//hello program//
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ConsoleApp1
 {
-    enum grade { dist = 90, first = 60, second = 40 }
-    public static void Main()
+    class Program
     {
-        //wap to accept character from the user
-        grade gr;
-        gr = grade.dist;
-        Console.WriteLine("grade=" + gr);
-        Console.WriteLine("grade=" + gr);
-        Console.WriteLine("grade value=" + Convert.ToInt32(gr));
-
+        static void Main (string[]args)
+        {
+            Console.WriteLine("hello");
+                //console is a class
+                //writeline is a method
+            Console.ReadLine();
+        }
 
     }
-}
 }
