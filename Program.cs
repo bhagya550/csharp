@@ -1,45 +1,26 @@
-﻿//switch//
+﻿//while loop//
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp2
 {
-    class Class1
+    class Program
     {
-
-        public static void Main()
+        static void Main(string[] args)
         {
-            //if else 
-            //wap to accept 2 no. and operator
-            int n1, n2, res = 0;
-            char op;
-            Console.WriteLine("Enter 2 no");
-            n1 = Convert.ToInt32(Console.ReadLine());
-            n2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter operator");
-            op = Convert.ToChar(Console.ReadLine());
-            switch (op)
+            // wap to print no from 1 to 10 using while loop
+            int i = 1;
+            while (i <= 10)
             {
-                case '+':
-                    res = n1 + n2;
-                    break;
-                case '-':
-                    res = n1 - n2;
-                    break;
-                case '*':
-                    res = n1 * n2;
-                    break;
-                default:
-                    Console.WriteLine("invalid");
-                    break;
-
+                Console.WriteLine("i = " + i);
+                i++;
             }
-
-            Console.WriteLine("res " + res);
             Console.ReadLine();
+
         }
+
     }
 }
