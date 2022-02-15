@@ -6,12 +6,13 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
 
-            int[] arr = new int[3]; //creating an array of 3 elements
-            arr[0] = 22;
-            arr[1] = 44;
-            arr[2] = 66;
+            int[] arr = new int[4]; //creating an array of 4elements
+            arr[0] = 11;
+            arr[1] = 22;
+            arr[2] = 33;
+            arr[3] = 44;
             //using for loop 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine("arr = " + arr[i]);
             }
@@ -22,7 +23,7 @@ namespace ConsoleApp2
                 Console.WriteLine("arr = " + i);
             }
             Console.ReadLine();
+
         }
     }
 }
-
