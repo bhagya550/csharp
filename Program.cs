@@ -1,5 +1,4 @@
-﻿//int and uint//
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,16 +9,20 @@ namespace program11
     {
         public static void Main()
         {
-            int b = -25890;//signed
+            long b = -25890222888L;//signed
             Console.WriteLine("value"+b);
             Console.WriteLine("enter");
-            b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("value=" + b);
-            //for negative as well as positive//
-            uint b1 = 2389000;//unsigned
+            b=Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("value"+b);
+            //for negative as well as positive no.
+            ulong b1 = 2389000L;//unsigned
+            Console.WriteLine("value" + b1);
             Console.WriteLine("enter");
-            b1 = Convert.ToUInt32(Console.ReadLine());
+            b1= Convert.ToUInt64(Console.ReadLine());
             Console.WriteLine("value=" + b1);
+            Console.ReadLine();
+
+
 
         }
     }
