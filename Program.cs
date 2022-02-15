@@ -12,8 +12,8 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             // wap to print no from 1 to 10 using while loop
-            int i = 1;
-            while (i <= 10)
+            int i = 2;
+            while (i <= 20)
             {
                 Console.WriteLine("i = " + i);
                 i++;
@@ -21,6 +21,5 @@ namespace ConsoleApp2
             Console.ReadLine();
 
         }
-
     }
 }
