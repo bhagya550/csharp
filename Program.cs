@@ -1,4 +1,4 @@
-﻿//explicit type casting//
+﻿//if else//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +12,22 @@ namespace ConsoleApp1
 
         public static void Main()
         {
-            long longValue = 1234567L;
-            int intValue = (int)longValue;
-            Console.WriteLine("(int) {0} = {1}", longValue, intValue);
+            //if else 
+            //wap to accept 2 no and print greater no.
+            int n1, n2;
+            Console.WriteLine("enter 2 no.");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt32(Console.ReadLine());
+            if (n1 > n2)
+                Console.WriteLine("n1 is greter");
+            else
+                Console.WriteLine("n2 is greater");
+
+
+
+
             Console.ReadLine();
         }
     }
 }
-
 
