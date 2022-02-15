@@ -1,25 +1,33 @@
-﻿//while loop//
+﻿//if else//
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp1
 {
-    class Program
+    class Class1
     {
-        static void Main(string[] args)
-        {
-            // wap to print no from 1 to 10 using while loop
-            int i = 1;
-            while (i <= 20)
-            {
-                Console.WriteLine("i = " + i);
-                i++;
-            }
-            Console.ReadLine();
 
+        public static void Main()
+        {
+            //if else 
+            //wap to accept 2 no and print greater no.
+            int n1, n2;
+            Console.WriteLine("enter 2 no.");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt32(Console.ReadLine());
+            if (n1 > n2)
+                Console.WriteLine("n1 is greter");
+            else
+                Console.WriteLine("n2 is greater");
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
+
