@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+    
 namespace ConsoleApp2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // wap to print no from 2 to 20 using while loop
+            // wap to print no from 1 to 10 using while loop
             int i, j;
-            for (i = 2; i < 10; i++)
+            for (i = 1; i < 10; i++)
             {
-                for (j = 2; j <= 20; j++)
+                for (j = 1; j < i; j++)
                 {
                     Console.Write(j + "\t");
                 }
