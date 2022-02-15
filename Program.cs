@@ -3,29 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace ConsoleApp4
+namespace ConsoleApp5
 {
-    class Program
+    public class Program
+    { 
+        static void Main(String[]args)
     {
-        static void Main(String[] args)
-        {
-            //wap to accept 3 no. and display addition of 3 no.//
-            int num1, num2, num3, res;
-            Console.WriteLine("enter number1");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number2");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number3");
-            num3 = Convert.ToInt32(Console.ReadLine());
-            res = num1 + num2 + num3;
-            Console.WriteLine("addition=" + res);
-            Console.ReadLine();
-        }
+        //wap to accept radius and print area of circle//
+        int radius;
+        float area, circ;
+        Console.WriteLine("enter radius ");
+        radius = Convert.ToInt32(Console.ReadLine());
+        area = (float)3.14 * radius * radius;
+        circ = (float)2 * 3.14f * radius;
+        Console.WriteLine("area" + area);
+        Console.WriteLine("circ" + circ);
+        Console.WriteLine();
+
     }
+
 }
-
-
-
-
-
-
+}
