@@ -1,9 +1,6 @@
-﻿//3 - for loop//
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+    
+
 namespace ConsoleApp2
 {
     class Program
@@ -12,7 +9,7 @@ namespace ConsoleApp2
         {
             // wap to print no from 1 to 10 using while loop
             int i;
-            for (i = 1; i < 10; i++)
+            for (i = 1; i <= 10; i++)
             {
                 Console.Write("i = " + i);
 
@@ -22,4 +19,3 @@ namespace ConsoleApp2
         }
     }
 }
-
