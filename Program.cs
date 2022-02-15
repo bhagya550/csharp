@@ -1,5 +1,4 @@
 ﻿using System;
-    
 
 namespace ConsoleApp2
 {
@@ -7,9 +6,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            // wap to print no from 1 to 10 using while loop
+            // wap to print no from 1 to 20 using while loop
             int i;
-            for (i = 1; i <= 10; i++)
+            for (i = 1; i <= 20; i++)
             {
                 Console.Write("i = " + i);
 
