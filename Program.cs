@@ -1,13 +1,20 @@
 ﻿using System;
-class program
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace printname
 {
-    static void Main(string[]args)
+    class program
     {
-        int number;
-        Console.WriteLine("enter a number:");
-        number=Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("you entered:{0}", number);
-        Console.ReadLine();
-
+        static void Main(string[]args)
+        {
+            //wap to accept your name and print
+            string name;
+            Console.WriteLine("enter your name");
+            name = Console.ReadLine();
+            Console.WriteLine("your name is" + name);
+            Console.WriteLine();
+        }
     }
 }
