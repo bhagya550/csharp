@@ -11,13 +11,13 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            // wap to print no from 1 to 10 using while loop
-            int i = 1;
+            // wap to print no from 1 to 20 using while loop
+            int i = 2;
             do
             {
                 Console.Write("i = " + i);
                 i++;
-            } while (i <= 10);
+            } while (i <= 20);
             Console.ReadLine();
 
         }
