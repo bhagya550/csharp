@@ -1,24 +1,26 @@
-﻿ //float//
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace  program11
+namespace ConsoleApp1
 {
     class Class1
     {
 
         public static void Main()
         {
-            float b = 123.4567890f; //signed
+            double b = 123456.1234567890123; //signed
             Console.WriteLine(" value " + b);
             Console.WriteLine("enter value ");
-            b = Convert.ToSingle(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("value = " + b);
+
             Console.ReadLine();
         }
     }
 }
+
+
 
