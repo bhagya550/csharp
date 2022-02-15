@@ -1,5 +1,4 @@
-﻿//reference type//
-//string//
+﻿//explicit type casting//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +12,12 @@ namespace ConsoleApp1
 
         public static void Main()
         {
-            String b = "Maninder";
-            Console.WriteLine(" value " + b);
-            Console.WriteLine("enter value ");
-            b = Console.ReadLine();
-            Console.WriteLine("value = " + b);
+            long longValue = 1234567L;
+            int intValue = (int)longValue;
+            Console.WriteLine("(int) {0} = {1}", longValue, intValue);
             Console.ReadLine();
         }
     }
 }
+
 
