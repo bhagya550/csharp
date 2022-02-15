@@ -1,4 +1,4 @@
-﻿//while loop//
+﻿//2 do while loop//
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +13,14 @@ namespace ConsoleApp2
         {
             // wap to print no from 1 to 10 using while loop
             int i = 1;
-            while (i <= 20)
+            do
             {
-                Console.WriteLine("i = " + i);
+                Console.Write("i = " + i);
                 i++;
-            }
+            } while (i <= 10);
             Console.ReadLine();
 
         }
     }
 }
+
