@@ -1,32 +1,28 @@
-﻿//create a structure student having members rno,name,course
+﻿//data type//
+//1 byte and sbyte//
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 namespace program11
-    {
-    class classs1
 {
-    struct student
-    {
-        public int rno;
-        public string name;
-        public string course;
+    class Class1
+        {
+        public static void Main()
+        {
+            byte b = 25;//unsigned byte for storing positive no.
+            Console.WriteLine("byte value" + b);
+            b = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine("byte=" + b);
+            //for negative as well as positive no.
+            sbyte b1 = -23;//signed byte 
+            Console.WriteLine("sbyte value" + b1);
+            Console.WriteLine("enter sbyte");
+            b1 = Convert.ToSByte(Console.ReadLine());
+            Console.WriteLine("sbyte=" + b1);
+            Console.ReadLine();
+        }
+        }
 
-    }
-    public static void Main()
-    {
-        student s1;
-        s1.rno = 20;
-        s1.name = "mahir";
-        s1.course = "dotnet";
-
-        Console.WriteLine("rno" + s1.rno);
-        Console.WriteLine("name" + s1.name);
-        Console.WriteLine("course" + s1.course);
-    }
-
-
-    }
 }
