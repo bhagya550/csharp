@@ -1,20 +1,24 @@
-﻿//hello program//
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace ConsoleApp1
+using System.Windows;
+namespace ConsoleApp2
 {
     class Program
     {
-        static void Main (string[]args)
+        static void Main(String[]args)
         {
-            Console.WriteLine("hello");
-                //console is a class
-                //writeline is a method
+            //wap to accept no.from the user and print square//
+            int num, sq;
+            Console.WriteLine("enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            sq = num * num;
+            Console.WriteLine("sq=" + sq);
             Console.ReadLine();
+                
+        
         }
-
     }
 }
