@@ -10,12 +10,12 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int i = 2;
+            int i = 0;
             while (true)
             {
                 Console.WriteLine(i);
                 i++;
-                if (i < 20)
+                if (i <= 10)
                     continue;
                 else
                     break;
@@ -26,3 +26,5 @@ namespace ConsoleApp2
         }
     }
 }
+
+
