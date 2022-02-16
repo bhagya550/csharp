@@ -1,4 +1,5 @@
-﻿using System;
+﻿//20 - example of local and shared variable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,32 +9,27 @@ namespace ConsoleApp2
 {
     class Program
     {
-        //creating a user defined method 
-        //method without parameters parameters and returing value
-        static int factorial()
+        //class level variable
+        static int fact = 2; //shared variable
+        static void factorial()
         {
-            int fact = 1;
-            int num;
-            Console.WriteLine("enter number");
-            num = Convert.ToInt32(Console.ReadLine());
-            while (num > 0)
-            {
-                fact = fact * num;
-                num--;
-            }
-            return fact;
+            int fact = 1; // local variable 
+            Console.WriteLine("value of fact local varialbe inside method " + fact);
+
 
 
         }
         static void Main(string[] args)
         {
 
-            int result;
-            result = factorial();
-            Console.WriteLine("fact = {0}", result);
+
+            factorial();
+            Console.WriteLine("fact inside main  = {0}", fact);
             Console.ReadLine();
 
         }
     }
 }
+
+
 
