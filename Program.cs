@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,13 +25,12 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num = 5;
+            int num = 8;
             int result;
             result = factorial(num);
-            Console.WriteLine("fact = {0}", result);
+            Console.WriteLine("fact = {0}", result
             Console.ReadLine();
 
         }
     }
 }
-
