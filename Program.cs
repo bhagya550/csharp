@@ -1,4 +1,5 @@
-﻿using System;
+﻿//14 - wap to create a method to display table of a no.
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,25 +9,28 @@ namespace ConsoleApp2
 {
     class Program
     {
-        //creating a user defined method displaygreeting
+        //creating a user defined method 
         //method with parameters parameters and returing no value
         static void factorial(int num)
         {
-            int fact = 1;
-            while (num > 0)
+            int res = 1;
+            int i = 1;
+            while (i <= 10)
             {
-                fact = fact * num;
-                num--;
+                res = i * num;
+                Console.WriteLine("{0} * {1} = {2}", num, i, res);
+                i++;
             }
-            Console.WriteLine("fact = " + fact);
+
 
         }
         static void Main(string[] args)
         {
-            int num = 4;
+            int num = 5;
             factorial(num);
             Console.ReadLine();
 
         }
     }
 }
+
