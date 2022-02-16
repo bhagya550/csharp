@@ -1,4 +1,5 @@
-﻿using System;
+﻿//10 example of break and continue
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +11,21 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int number;
-            Console.WriteLine("enter number");
-            number = Convert.ToInt32(Console.ReadLine());
-            if (number % 2 == 0) goto Even;
-            Console.WriteLine("no is odd");
-            goto End;
-        Even:
-            Console.WriteLine("no is even");
-        End:;
+            int i = 0;
+            while (true)
+            {
+                Console.WriteLine(i);
+                i++;
+                if (i < 10)
+                    continue;
+                else
+                    break;
+            }
+
             Console.ReadLine();
 
         }
     }
 }
+
+
