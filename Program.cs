@@ -1,4 +1,4 @@
-﻿//10 example of break and continue
+﻿//11 example of methods or function in csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +9,16 @@ namespace ConsoleApp2
 {
     class Program
     {
+        //creating a user defined method displaygreeting
+        //method with no parameters and returing no value
+        static void displaygreetings()
+        {
+            Console.WriteLine("happy valentine day");
+        }
         static void Main(string[] args)
         {
-            int i = 0;
-            while (true)
-            {
-                Console.WriteLine(i);
-                i++;
-                if (i <=20)
-                    continue;
-                else
-                    break;
-            }
 
+            displaygreetings();
             Console.ReadLine();
 
         }
