@@ -23,12 +23,10 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num = 6;
+            int num = 4;
             factorial(num);
             Console.ReadLine();
 
         }
     }
 }
-
-
