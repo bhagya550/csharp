@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,10 +23,12 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num = 5;
+            int num = 6;
             factorial(num);
             Console.ReadLine();
 
         }
     }
 }
+
+
