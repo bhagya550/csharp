@@ -9,11 +9,13 @@ namespace ConsoleApp2
     class Program
     {
         //creating a user defined method 
-        //method with parameters parameters and returing value
-        static int factorial(int num)
+        //method without parameters parameters and returing value
+        static int factorial()
         {
             int fact = 1;
-
+            int num;
+            Console.WriteLine("enter number");
+            num = Convert.ToInt32(Console.ReadLine());
             while (num > 0)
             {
                 fact = fact * num;
@@ -25,12 +27,13 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num = 8;
+
             int result;
-            result = factorial(num);
-            Console.WriteLine("fact = {0}", result
+            result = factorial();
+            Console.WriteLine("fact = {0}", result);
             Console.ReadLine();
 
         }
     }
 }
+
