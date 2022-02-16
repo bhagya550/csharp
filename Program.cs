@@ -13,7 +13,7 @@ namespace ConsoleApp2
         //method with no parameters and returing no value
         static void displaygreetings()
         {
-            Console.WriteLine("happy valentine day");
+            Console.WriteLine("happy birthdday");
         }
         static void Main(string[] args)
         {
