@@ -1,4 +1,4 @@
-﻿//11 example of methods or function in csharp
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +10,24 @@ namespace ConsoleApp2
     class Program
     {
         //creating a user defined method displaygreeting
-        //method with no parameters and returing no value
-        static void displaygreetings()
+        //method with parameters parameters and returing no value
+        static void factorial(int num)
         {
-            Console.WriteLine("happy birthdday");
+            int fact = 1;
+            while (num > 0)
+            {
+                fact = fact * num;
+                num--;
+            }
+            Console.WriteLine("fact = " + fact);
+
         }
         static void Main(string[] args)
         {
-
-            displaygreetings();
+            int num = 5;
+            factorial(num);
             Console.ReadLine();
 
         }
     }
 }
-
