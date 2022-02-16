@@ -1,4 +1,5 @@
-﻿using System;
+﻿//10 example of break and continue
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace ConsoleApp2
             {
                 Console.WriteLine(i);
                 i++;
-                if (i <= 10)
+                if (i <=20)
                     continue;
                 else
                     break;
@@ -26,5 +27,4 @@ namespace ConsoleApp2
         }
     }
 }
-
 
