@@ -1,35 +1,18 @@
-﻿//20 - example of local and shared variable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp2
+﻿using System;
+public class FibonacciExample
 {
-    class Program
+    public static void Main(string[] args)
     {
-        //class level variable
-        static int fact = 5; //shared variable
-        static void factorial()
+        int n1 = 0, n2 = 1, n3, i, number;
+        Console.Write("Enter the number of elements: ");
+        number = int.Parse(Console.ReadLine());
+        Console.Write(n1 + " " + n2 + " "); //printing 0 and 1    
+        for (i = 2; i < number; ++i) //loop starts from 2 because 0 and 1 are already printed    
         {
-            int fact = 1; // local variable 
-            Console.WriteLine("value of fact local varialbe inside method " + fact);
-
-
-
-        }
-        static void Main(string[] args)
-        {
-
-
-            factorial();
-            Console.WriteLine("fact inside main  = {0}", fact);
-            Console.ReadLine();
-
+            n3 = n1 + n2;
+            Console.Write(n3 + " ");
+            n1 = n2;
+            n2 = n3;
         }
     }
 }
-
-
-
