@@ -1,4 +1,4 @@
-﻿//20 - example of local and shared variable
+﻿// example of local and shared variable
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace ConsoleApp2
     class Program
     {
         //class level variable
-        static int fact = 2; //shared variable
+        static int fact = 4; //shared variable
         static void factorial()
         {
             int fact = 1; // local variable 
@@ -30,6 +30,3 @@ namespace ConsoleApp2
         }
     }
 }
-
-
-
