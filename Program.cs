@@ -1,4 +1,4 @@
-﻿//14 - wap to create a method to display table of a no.
+﻿//15- wap to create a method to display table of a no.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,11 +26,10 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num = 5;
+            int num = 10;
             factorial(num);
             Console.ReadLine();
 
         }
     }
 }
-
