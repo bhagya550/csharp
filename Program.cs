@@ -3,39 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace ConsoleApp2
+namespace ConsoleApp
 {
-    class Employee
+    class Book
     {
-        int empno;
-        string empname;
-        float salary;
-        //creating methods
-        public void getdata()
+        int Bookid;
+        string title, author;
+        int price;
+        //creating a constructor with no. parameters
+        public Book()
         {
-            Console.WriteLine("enter employee no");
-            empno = Convert.ToInt32(Console.ReadLine());
-            empname = Console.ReadLine();
-            Console.WriteLine("enter emplyee name");
-            empname = Console.ReadLine();
-            Console.WriteLine("enter employee salary");
-            salary = Convert.ToInt32(Console.ReadLine());
+            Bookid = 1;
+            title = "Oracle";
+            author = "jemes";
+            price = 200;
         }
-        public void displaydata()
+        public void display()
         {
-            Console.WriteLine("empno" + empno);
-            Console.WriteLine("empname" + empname);
-            Console.WriteLine("salary" + salary);
-
+            Console.WriteLine("book id=" + Bookid);
+            Console.WriteLine("book title=" + title);
+            Console.WriteLine("book author=" + author);
+            Console.WriteLine("price=" + price);
         }
-
     }
     class program
     {
-        static void Main()
+        static void Main(string[]args)
         {
-            Employee emp = new Employee();
-            emp.getdata();
+            Book B = new Book();//this will call constructor automatically
+            B.display();
             Console.ReadLine();
 
         }
