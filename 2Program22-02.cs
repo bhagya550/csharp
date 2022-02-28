@@ -1,25 +1,39 @@
-﻿//base keyword example//
+﻿//calling base class method//
 using System;
-public class Animal
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
 {
-    public string color = "white";
-}
-public class Dog : Animal
-{
-    string color = "black";
-    public void showColor()
+    public class Animal
     {
-        Console.WriteLine(base.color);
-        Console.WriteLine(color);
+        public void eat()
+        {
+            Console.WriteLine("eating...");
+        }
     }
 
+    public class Dog : Animal
+    {
+        public void eat()
+        {
+            base.eat(); //this will class base class method eat
+            Console.WriteLine("eating bread...");
+        }
+
+    }
+    public class TestBase
+    {
+        public static void Main()
+        {
+            Dog g = new Dog();
+            g.eat();
+        }
+    }
 
 }
-public class TestBase
-{
-    public static void Main()
-    {
-        Dog d = new Dog();
-        d.showColor();
-    }
-}
+
+
+
