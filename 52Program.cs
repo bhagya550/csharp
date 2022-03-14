@@ -1,25 +1,35 @@
 ﻿using System;
 
-public class functionexcercise
+namespace Functionexcercise
 {
-    public static int Countspaces(string str)
+    class Program
     {
-        int spcctr = 0;
-        string strone;
-        for (int i = 0; i < str.Length; i++)
+
+        static void Main(string[] args)
         {
-            strone = str.Substring(i, 1);
-            if (strone == " ")
-                spcctr++;
+            int number;
+
+            // Inputting number from user
+            Console.WriteLine("Enter any number: ");
+            number = Convert.ToInt32(Console.ReadLine());
+
+            CheckNumIsEvenOrOdd(number);
+            Console.ReadLine();
+
         }
-        return spcctr;
+
+        public static void CheckNumIsEvenOrOdd(int _number)
+        {
+            if (_number % 2 == 0)
+            {
+                Console.WriteLine("Number {0} is Even", _number);
+            }
+            else
+            {
+                Console.WriteLine("Number {0} is Odd", _number);
+            }
+        }
+
     }
-    public static void Main()
-    {
-        string strtwo;
-        Console.Write("Please Enter a string : ");
-        strtwo = Console.ReadLine();
-        Console.WriteLine("\"" + strtwo + "\"" + " contains {0} spaces", Countspaces(strtwo));
-        Console.ReadLine();
-    }
+
 }
